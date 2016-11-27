@@ -1,0 +1,282 @@
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+
+html{
+    float: none;
+    background-color: f9f9f7;
+    
+}
+p {
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    padding: 5px 10px 5px 10px;
+    
+}
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: underline; 
+	color: black;
+	}
+
+a:visited { 
+	font-weight: bold; 
+	text-decoration: underline; 
+	color: black;
+	}
+
+a:hover, a:focus, a:active { 
+	color: dimgray;
+    font-weight: bolder;
+	}
+
+h1, h2, h3 {
+    font-family: 'Homemade Apple', cursive;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 800;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1em;
+}
+
+/* specific divs */
+
+.title {    
+    
+}
+.intro {
+}
+.summary {
+    font-size: .8em;
+    width: 300px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    /*a demonstration...*/
+}
+
+.summary p {
+    text-align: center;
+}
+
+.preamble {
+    width: 350px;
+    height: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(images/PREAMBLE.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 400px 400px;
+     /*road to enlightenment*/
+}
+
+.explanation {
+    width: 350px;
+    height: 410px ;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(images/Explanation.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 400px 450px;
+    /*what is this about?*/
+}
+
+.participation {
+    width: 350px;
+    height: 530px ;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(images/Participation.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 400px 550px;
+}
+
+
+.benefits {
+    width: 350px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto; 
+    background-image: url(images/Benefits.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 400px 220px;
+}
+
+.requirements {
+    width: 350px;
+    height: 900px;
+    margin-left: auto;
+    margin-right: auto; 
+    background-image: url(images/Requirements.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 400px 1000px;
+}
+
+.wrapper {
+    width: 300px;
+    margin: auto;
+    height: 500px;
+    background-image: url(images/Explanation.png);
+    background-size: 400px 900px;
+   /*select design, archives, resources*/
+}
+
+.design-selection {
+    font-family: 'Lato', sans-serif;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 400px 440px;
+    
+}
+.design-archives {
+    font-family: 'Lato', sans-serif;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 400px 440px;
+   
+}
+.zen-resources {
+    font-family: 'Lato', sans-serif;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 400px 440px;
+}
+
+footer {
+    font-family: 'Lato', sans-serif;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 350px;
+    height: 20px;
+    padding-top: 20px;
+    text-align: center;
+    
+}
+
+/* Media Queries */
+     
+@media (min-width:800px) {
+ /*floating two columns*/
+
+    
+    h1, h2 {
+        display: inline-block;
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .intro {
+        margin: 1em;
+    }
+    
+
+    .summary {
+        
+        width: 800px;
+        height: 100px;
+        margin: 0 0 0 0;
+        /*a demonstration...*/
+}
+    .summary p {
+        text-align: left;
+        margin-top: -12px;
+        font-size: .5em;
+        margin-left: 15px;
+        
+    }
+    
+    .preamble {
+        float: left;
+        width: 50%;
+        background-size: cover;
+     /*road to enlightenment*/
+}
+    
+    .main_supporting {
+        display: inline-block;
+        margin: 10px;
+}
+    
+    .explanation {
+        float: right;
+        width: 50%;
+        background-size: cover;
+
+}
+
+    .participation {
+        margin: 1em;
+        float: left;
+        width: 50%;
+        background-size: cover;
+
+}
+
+    .benefits {
+        margin: 1em;
+        float: right;
+        width: 50%;
+        background-size: cover;
+        
+}
+
+    .requirements {
+        margin: 1em;
+        float: left;
+        width: 55%;
+        background-size: cover;
+}
+    .requirements p {
+    margin: 0 10 0 10;
+    }
+    
+
+    .wrapper {
+        float: right;
+        width:25%;
+        margin: 1em;   
+}
+    .design-selection {
+        display: inline-block;
+        margin: 1em;
+}
+
+    .design-archives {
+        display: inline-block;
+        margin: 1em;
+}
+
+    .zen-resources {
+        display: inline-block;
+        margin: 1em;
+}
+    
+    footer {
+   
+        
+}
+
+
+/*god, coding is stressful*/
+
+/*LORD SAVE MY SOUL*/
+
+/*TYREIL, THIS IS SO DANG HARD. IF I EVER DO CODING, IT'LL BE MAINTENANCE ONLY. BUILDING SITES FROM SCRATCH IS NOT MY FAVORITE.*/
+
+/*Its amazing how you can learn so much but when put to start from scratch - ALL THE KNOWLEDGE IS GONE. -_- ._. >_<   */
