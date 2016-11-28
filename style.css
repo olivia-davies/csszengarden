@@ -134,6 +134,12 @@ h3{
     background-position: left;
     background-size: 400px 1030px;
 }
+    .requirements p, 
+    .requirements h3,
+    .requirements a{
+        color: lightslategrey;
+        font-weight: 100;
+}
 
 footer {
     font-family: 'Homemade Apple', cursive;
@@ -185,8 +191,9 @@ footer {
 
 /* Media Queries */
      
-@media (min-width:740px) {
+@media (min-width:740px), {
          /* two columns*/
+
 
     .summary {
         font-size: .8em;
@@ -201,7 +208,7 @@ footer {
 }
     
     .preamble {
-        position: absolute;
+        position: relative;
         width: 350px;
         height: 410px;
         background-size: 400px 430px;
@@ -209,59 +216,74 @@ footer {
 }
       
     .explanation {
-        position: relative;
-        left: 350px;
+        position: absolute;
+        top: 270px;
+        left: 400px;
         width: 350px;
-        height: 450px;
+        height: 460px;
         background-repeat: repeat;
-        background-size: 400px 450px;
+        background-size: 400px 460px;
 }
 
     .participation {
-        position: relative;
-        top: -70px;
-        right: -10px;
+        width: 350px;
+        height: 590px ;
+        background-size: 400px 610px;
+        position: absolute;
+        top: 700px;
 }
 
     .benefits {
-        position: relative;  
-        
+        position: absolute;  
+        top: 730px;
+        left: 380px;
 }
 
     .requirements {
+        position: absolute;
+        top: 1000px;
+        left: 390px;
+}
+   
+    .wrapper {
+        position: absolute;
+        top: 1300px;
+    }
+  
+    footer {
+        position:relative;
+        top: 1275px;
+        left: 7px;
+}
         
 }
-        .requirements p {
+
+@media (min-width:830px) {
         
+    .summary {
+    font-size: .8em;
+    width: 1000px;
+    height: 100px;
+    /*a demonstration...*/
+}
+ 
+    .requirements {
+        position: absolute;
+        top: 200px;
+        left: 800px;
 }
     
     .wrapper {
-      
-}
-        .design-selection {
+        position: absolute;
+        top: 1000px;
+        left: 400px;
         
-}
-
-        .design-archives {
-            
-}
-
-        .zen-resources {
-           }
+    }
     
     footer {
-          
-}
-        
-}
-
-    @media (min-width:830px) {
-        
-        .summary {
-        font-size: .8em;
-        width: 800px;
-        height: 100px;
-        /*a demonstration...*/
+        position:relative;
+        top: 1000px;
+        left: 400px;
 }
         
 }
