@@ -7,10 +7,10 @@
 /* basic elements */
 
 html{
-    float: none;
     background-color: f9f9f7;
     
 }
+
 p {
     font-family: 'Lato', sans-serif;
     text-align: left;
@@ -23,13 +23,11 @@ a:link {
 	text-decoration: underline; 
 	color: black;
 	}
-
 a:visited { 
 	font-weight: bold; 
 	text-decoration: underline; 
 	color: black;
 	}
-
 a:hover, a:focus, a:active { 
 	color: dimgray;
     font-weight: bolder;
@@ -38,240 +36,235 @@ a:hover, a:focus, a:active {
 h1, h2, h3 {
     font-family: 'Homemade Apple', cursive;
     text-align: center;
-    padding-top: 10px;
     font-weight: 800;
+    margin-left: 5px;
 }
 
 h1{
-    font-size: 2em;
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h1, h2 {
+    display: inline-block;
+    padding-left: 10px;
 }
 
 h3{
     font-size: 1em;
+    padding-top: 10px;
+    text-decoration: underline;
 }
 
 /* specific divs */
-
-.title {    
-    
-}
 .intro {
+    margin-left: 14px;
 }
 .summary {
     font-size: .8em;
-    width: 300px;
-    height: 100px;
-    margin-left: auto;
+    width: 330px;
+    height: 200px;
+    margin-left: 20px;
     margin-right: auto;
     /*a demonstration...*/
 }
-
-.summary p {
-    text-align: center;
-}
+    .summary p {
+        font-family: 'Homemade Apple', cursive;
+        text-align: left;
+        /*a demonstration...*/
+    }
 
 .preamble {
     width: 350px;
-    height: 380px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 390px;
     background-image: url(images/PREAMBLE.png);
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: 400px 400px;
+    background-size: 400px 410px;
+    
      /*road to enlightenment*/
+}
+    .preamble p {
+        margin-left: 20px;
+}
+
+.main.supporting{
+    margin-left: 14px;
+}
+    .main.supporting p{
+        margin-left: 20px;
 }
 
 .explanation {
     width: 350px;
-    height: 410px ;
-    margin-left: auto;
-    margin-right: auto;
+    height: 450px ;
     background-image: url(images/Explanation.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 400px 450px;
+    background-size: 400px 470px;
+    
     /*what is this about?*/
 }
 
 .participation {
     width: 350px;
-    height: 530px ;
-    margin-left: auto;
-    margin-right: auto;
+    height: 580px ;
     background-image: url(images/Participation.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 400px 550px;
+    background-size: 400px 600px;
 }
 
-
 .benefits {
-    width: 350px;
-    height: 220px;
-    margin-left: auto;
-    margin-right: auto; 
+    width: 374px;
+    height: 280px;
     background-image: url(images/Benefits.png);
-    background-repeat: no-repeat;
-    background-position: top;
+    background-repeat: round;
     background-size: 400px 220px;
+}
+    .benefits p {
+        margin-right: 10px;
 }
 
 .requirements {
     width: 350px;
-    height: 900px;
-    margin-left: auto;
-    margin-right: auto; 
+    height: 1000px;
     background-image: url(images/Requirements.png);
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: 400px 1000px;
-}
-
-.wrapper {
-    width: 300px;
-    margin: auto;
-    height: 500px;
-    background-image: url(images/Explanation.png);
-    background-size: 400px 900px;
-   /*select design, archives, resources*/
-}
-
-.design-selection {
-    font-family: 'Lato', sans-serif;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 400px 440px;
-    
-}
-.design-archives {
-    font-family: 'Lato', sans-serif;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 400px 440px;
-   
-}
-.zen-resources {
-    font-family: 'Lato', sans-serif;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 400px 440px;
+    background-position: left;
+    background-size: 400px 1030px;
 }
 
 footer {
-    font-family: 'Lato', sans-serif;
-    margin-left: auto;
-    margin-right: auto; 
-    width: 350px;
+    font-family: 'Homemade Apple', cursive;
+    word-spacing: 30px;
+    margin-left: 15px;
+    width: 330px;
     height: 20px;
-    padding-top: 20px;
-    text-align: center;
+    padding-top: 15px;
+    text-align: left;
     
 }
+
+.wrapper {
+    width: 325px;
+    height: 700px;
+    margin-left: 35px;
+    margin-right: auto;
+   
+   /*select design, archives, resources*/
+}
+    .design-selection {
+        font-family: 'Lato', sans-serif;
+        height: 270px;
+        background-image: url(images/Explanation.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 400px 320px;
+
+    }
+    .design-archives {
+        font-family: 'Lato', sans-serif;
+        height: 110px;
+        background-image: url(images/Explanation.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 400px 120px;
+
+    }
+    .zen-resources {
+        font-family: 'Lato', sans-serif;
+        height: 200px;
+        background-image: url(images/Explanation.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 400px 220px;
+    }
+
+
 
 /* Media Queries */
      
-@media (min-width:800px) {
- /*floating two columns*/
-
-    
-    h1, h2 {
-        display: inline-block;
-        padding-left: 20px;
-        margin-bottom: 15px;
-    }
-    
-    .intro {
-        margin: 1em;
-    }
-    
+@media (min-width:740px) {
+         /* two columns*/
 
     .summary {
-        
-        width: 800px;
-        height: 100px;
-        margin: 0 0 0 0;
+        font-size: .8em;
+        width: 490px;
+        height: 130px;
         /*a demonstration...*/
 }
-    .summary p {
-        text-align: left;
-        margin-top: -12px;
-        font-size: .5em;
-        margin-left: 15px;
-        
-    }
+        .summary p {
+            text-align: left;
+            margin-top: -12px;
+            margin-bottom: 10px;
+}
     
     .preamble {
-        float: left;
-        width: 50%;
-        background-size: cover;
+        position: absolute;
+        width: 350px;
+        height: 410px;
+        background-size: 400px 430px;
      /*road to enlightenment*/
 }
-    
-    .main_supporting {
-        display: inline-block;
-        margin: 10px;
-}
-    
+      
     .explanation {
-        float: right;
-        width: 50%;
-        background-size: cover;
-
+        position: relative;
+        left: 350px;
+        width: 350px;
+        height: 450px;
+        background-repeat: repeat;
+        background-size: 400px 450px;
 }
 
     .participation {
-        margin: 1em;
-        float: left;
-        width: 50%;
-        background-size: cover;
-
+        position: relative;
+        top: -70px;
+        right: -10px;
 }
 
     .benefits {
-        margin: 1em;
-        float: right;
-        width: 50%;
-        background-size: cover;
+        position: relative;  
         
 }
 
     .requirements {
-        margin: 1em;
-        float: left;
-        width: 55%;
-        background-size: cover;
+        
 }
-    .requirements p {
-    margin: 0 10 0 10;
-    }
+        .requirements p {
+        
+}
     
-
     .wrapper {
-        float: right;
-        width:25%;
-        margin: 1em;   
+      
 }
-    .design-selection {
-        display: inline-block;
-        margin: 1em;
-}
-
-    .design-archives {
-        display: inline-block;
-        margin: 1em;
-}
-
-    .zen-resources {
-        display: inline-block;
-        margin: 1em;
-}
-    
-    footer {
-   
+        .design-selection {
         
 }
 
+        .design-archives {
+            
+}
+
+        .zen-resources {
+           }
+    
+    footer {
+          
+}
+        
+}
+
+    @media (min-width:830px) {
+        
+        .summary {
+        font-size: .8em;
+        width: 800px;
+        height: 100px;
+        /*a demonstration...*/
+}
+        
+}
 
 /*god, coding is stressful*/
 
@@ -280,3 +273,7 @@ footer {
 /*TYREIL, THIS IS SO DANG HARD. IF I EVER DO CODING, IT'LL BE MAINTENANCE ONLY. BUILDING SITES FROM SCRATCH IS NOT MY FAVORITE.*/
 
 /*Its amazing how you can learn so much but when put to start from scratch - ALL THE KNOWLEDGE IS GONE. -_- ._. >_<   */
+
+/*ALSO, my layout is like a whiteboard and sticky notes. In UX design
+I'm learning a lot about storyboarding and I think this was a
+unique way to approach it :) */
